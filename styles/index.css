@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* تصاميم خاصة بالهيدر */
@@ -27,6 +28,7 @@ header {
 }
 
 nav a {
+  direction: rtl;
   color: white;
   text-decoration: none;
   font-size: 1.1em;
@@ -81,7 +83,7 @@ nav a:hover {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background-color: #d21ec9;
+  background-color: var(--main-color);
   padding: 3px;
   margin-bottom: 10px;
   margin-left: 200px;
@@ -114,6 +116,26 @@ nav a:hover {
   margin: 0;
   padding: 0;
   font-size: 50px;
+}
+
+.media-btns {
+  display: flex;
+  align-items: center;
+
+}
+
+.media-btns .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 20px 10px;
+  text-decoration: none;
+  background-color: #525CEB;
+
 }
 
 
