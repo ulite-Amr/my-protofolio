@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 
 /* تصاميم عامة */
+
+:root {
+  --main-color : #d21ec9
+}
+
 body,
 html {
   font-family: "Cairo", sans-serif;
@@ -33,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #d21ec9;
+  color: var(--main-color);
 }
 
 .logo {
@@ -47,7 +52,7 @@ nav a:hover {
 
 .logo span {
   text-decoration: none;
-  color: #d21ec9;
+  color: var(--main-color);
   font-size: 1vh;
   font-size: 0.5em;
   font-weight: 700;
@@ -103,7 +108,7 @@ nav a:hover {
   margin: 0;
 }
 .hello span {
-  color: #d21ec9;
+  color: var(--main-color);
   display: block;
   font-weight: 700;
   margin: 0;
