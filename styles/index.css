@@ -17,7 +17,7 @@ html {
 /* تصاميم خاصة بالهيدر */
 header {
   background-color: transparent;
-  width: 100vh;
+  width: calc(100% - 300px);
   z-index: 999;
   position: fixed;
   display: flex;
