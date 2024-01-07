@@ -85,13 +85,17 @@ nav a:hover {
 }
 
 .image .profile-image {
-
+  background-image: url(../images/profile-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border :  3px solid #F8EDFF
 }
+
 
 
 .hello {
