@@ -80,7 +80,7 @@ header ul li a:hover {
   display: flex;
   padding: var(--padding);
   align-items: center;
-  background-image: url(https://github.com/ulite-Amr/my-protofolio/blob/main/images/wallpaperr.jpg);
+  background-image: url("https://github.com/ulite-Amr/my-protofolio/blob/main/images/wallpaperr.jpg?raw=true");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
