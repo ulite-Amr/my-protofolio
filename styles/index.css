@@ -1,4 +1,329 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 
-/* تصاميم عامة */
+:root {
+  --main-color: #f48d33;
+  --text-color: #fff;
+  --bg-color: #0c0d1f;
+  --box-color: #1D2B53;
+  --padding: 20px 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* start header section */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  background-color: transparent;
+  backdrop-filter: blur(15px); /* Apply the blur effect */
+}
+
+header .logo {
+  position: relative;
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 0.5em;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: var(--main-color);
+}
+
+/* end header section */
+
+/* start home section */
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: var(--padding);
+  align-items: center;
+  background-image: url(/images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .home-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.home .home-content h1 {
+  position: relative;
+  font-size: 4em;
+  color: var(--text-color);
+  line-height: 1.2em;
+}
+
+.home .home-content h1 span {
+  color: var(--main-color);
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.home .home-content p {
+  position: relative;
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 500px;
+  color: var(--text-color);
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.home .home-content a {
+  position: relative;
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+/* end home section */
+/* start services section */
+
+/* تصميم العناصر الخارجية */
+.services {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+  }
+  
+  .services .heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 30px;
+  }
+  
+  .services .heading span {
+    color: var(--main-color);
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* تصميم عنصر الخدمة */
+  .services-box {
+    background-color: var(--box-color);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .services-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-box .icon {
+    font-size: 3em;
+    color: var(--main-color);
+    margin-bottom: 15px;
+  }
+  
+  .services-box .content {
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .services-box h3 {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+  
+  .services-box p {
+    font-size: 1em;
+    color: #d6d6d6;
+    margin-bottom: 20px;
+  }
+  
+  .services-box a {
+    display: inline-block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    margin: 10px 0 25% 0;
+  }
+  
+  .services-box a:hover {
+    background-color: #ff4f4f;
+  }
+
+/* end services section */
+
+/* start about section */
+
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  background-color: var(--bg-color);
+}
+
+.about .about-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.about .about-content h2 {
+  position: relative;
+  font-size: 3em;
+  color: var(--text-color);
+  line-height: 1.2em;
+}
+
+.about .about-content h2 span {
+  color: var(--main-color);
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.about .about-content p {
+  position: relative;
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 500px;
+  color: var(--text-color);
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.about .about-content a {
+  position: relative;
+  display: inline-block;
+  color: var(--text-color);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.about .about-img {
+  position: relative;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.about-img img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--main-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about .btn {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.about-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.about-icons li {
+  list-style: none;
+  margin: 0 10px;
+  background-color: transparent;
+}
+
+.about-icons li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5em;
+  transition: 0.5s;
+  background-color: transparent;
+}
+
+.about-icons li a:hover {
+  color: var(--main-color);
+  background-color: transparent;
+  transform: translateY(-10px);
+  background-color: transparent;
+}
+
+/* end about section */
+
 
